@@ -1,4 +1,3 @@
-from datetime import timedelta
 from django.utils.timezone import localtime
 from django.shortcuts import render
 
@@ -30,9 +29,9 @@ def passcard_info_view(request, passcode):
     for visit in get_visits_by_passcode(passcode):
         this_passcard_visits.append(
             {
-            'entered_at': localtime(visit.entered_at),
-            'duration': get_duration(visit),
-            'is_strange': is_visit_long(visit),
+                'entered_at': localtime(visit.entered_at),
+                'duration': get_duration(visit),
+                'is_strange': is_visit_long(visit),
             }
         )
 
