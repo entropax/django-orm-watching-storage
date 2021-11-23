@@ -36,3 +36,7 @@ pip-delete-this-directory.txt
 *.pyc
 __pycache__/
 local_settings.py
+
+# Thumb
+Thumbs.db
+.DS_Store
