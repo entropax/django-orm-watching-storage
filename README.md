@@ -7,6 +7,7 @@ You can obtain database credentials only if you are user of [dvmn](https://dvmn.
 * Setup instractions:
 clone this repo, than
 ```bash
+pyhton -m venv install
 source pyenv/bin/activate
 pip install -r requirements.txt
 ```
