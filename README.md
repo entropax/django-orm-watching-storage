@@ -13,9 +13,9 @@ poetry install
 
 #### Now you need export sercrets env vars for ./project/settings.py
 ```bash
-export PASSWORD='osim5'
-export SECRET_KEY= ''
-export HOST='checkpoint.devman.org'
+export PASSWORD='yourSuperPassword'
+export SECRET_KEY= 'sf0923jf0932fjf09j32f9j'
+export HOST='yourhost.host'
 export DEBUG=false
 ```
 or you can create .env with this fields:
