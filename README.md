@@ -32,7 +32,7 @@ poetry run python main.py runserver 0.0.0.0:8000
 ```
 Then open in browser
 ```bash
-[localhost:8000](http://localhost:8000/)
+[localhost](http://localhost:8000/)
 ```
 ## Project goals
 The code is written for educational purposes.
