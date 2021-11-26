@@ -28,11 +28,11 @@ or you can create .env with this fields:
 
 #### Run
 ```bash
-portry run python manage.py runserver 0.0.0.0:8000
+portry run python main.py runserver 0.0.0.0:8000
 ```
 Then open in browser
 ```bash
-(http://localhost:8000/)[http://localhost:8000/]
+[http://localhost:8000/](http://localhost:8000/)
 ```
 ## Project goals
 The code is written for educational purposes.
