@@ -28,7 +28,7 @@ or you can create .env with this fields:
 
 #### Run
 ```bash
-portry run python main.py runserver 0.0.0.0:8000
+poetry run python main.py runserver 0.0.0.0:8000
 ```
 Then open in browser
 ```bash
