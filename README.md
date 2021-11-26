@@ -4,29 +4,31 @@ and display data about visitors and their passcodes.
 You can obtain database credentials only if you are user of [dvmn](https://dvmn.org).
 
 ## How to / setup instructions
-#### Firstly download repo, get your virtual env and install requirements
+#### Firstly download repo, and install requirements
 ```bash
 git clone https://github.com/entropax/django-orm-watching-storage
 cd django-orm-watching-storage
-pyhton -m venv install .
-source pyenv/bin/activate
-pip install -r requirements.txt
+poetry install
 ```
 
-#### Then you need to update ./project/settings.py file like this:
+#### Now you need export sercrets env vars for ./project/settings.py
+```bash
+export PASSWORD='osim5'
+export SECRET_KEY= ''
+export HOST='checkpoint.devman.org'
+export DEBUG=false
+```
+or you can create .env with this fields:
 | Field               | Example         |
 | -----               | ------          |
 | HOST                | host.host.ort   |
-| PORT                | 5434            |
-| NAME(database name) | name            |
-| USER                | guard           |
 | PASSWORD            | beStpa6@rd      |
 | SECRET_KEY          | 2fi23vbiobf2... |
-| DEBUG               | True            |
+| DEBUG               | true            |
 
 #### Run
 ```bash
-python main.py
+portry run python manage.py runserver 0.0.0.0:8000
 ```
 Then open in browser
 ```bash
