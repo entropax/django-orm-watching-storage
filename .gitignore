@@ -17,7 +17,11 @@ var/
 .installed.cfg
 *.egg
 
+# Poetry files
+poetry.lock
+
 # Virtual env files
+.env
 env/
 pyenv/
 lib/
