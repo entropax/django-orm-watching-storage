@@ -31,9 +31,8 @@ or you can create .env with this fields:
 poetry run python main.py runserver 0.0.0.0:8000
 ```
 Then open in browser
-```bash
-[localhost](http://localhost:8000/)
-```
+[localhost:8000](http://localhost:8000/)
+
 ## Project goals
 The code is written for educational purposes.
 Training course for web-developers [dvmn](https://dvmn.org).
