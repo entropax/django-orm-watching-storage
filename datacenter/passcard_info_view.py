@@ -17,13 +17,13 @@ def passcard_info_view(request, passcode):
     for visit in Visit.objects.filter(passcard__passcode=passcode):
         this_passcard_visits.append(
             {
-                'entered_at': localtime(visit.entered_at),
-                'duration': visit.get_duration(),
-                'is_strange': is_visit_long(visit),
+                "entered_at": localtime(visit.entered_at),
+                "duration": visit.get_duration(),
+                "is_strange": is_visit_long(visit),
             }
         )
     context = {
-        'passcard': Passcard.objects.get(passcode=passcode),
-        'this_passcard_visits': this_passcard_visits
+        "passcard": Passcard.objects.get(passcode=passcode),
+        "this_passcard_visits": this_passcard_visits
     }
-    return render(request, 'passcard_info.html', context)
+    return render(request, "passcard_info.html", context)
