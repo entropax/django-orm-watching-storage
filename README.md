@@ -13,18 +13,16 @@ poetry install
 
 #### Now you need export sercrets env vars for ./project/settings.py
 ```bash
-export PASSWORD='yourSuperPassword'
-export SECRET_KEY= 'sf0923jf0932fjf09j32f9j'
-export HOST='yourhost.host'
+export DB_URL="postgres://USER:PASSWORD@HOST:PORT/NAME"
+export SECRET_KEY="sf0923jf0932fjf09j32f9j"
 export DEBUG=false
 ```
 or you can create .env with this fields:
-| Field               | Example         |
-| -----               | ------          |
-| HOST                | host.host.ort   |
-| PASSWORD            | beStpa6@rd      |
-| SECRET_KEY          | 2fi23vbiobf2... |
-| DEBUG               | true            |
+| Field      | Example                                 |
+| -----      | ------                                  |
+| DB_URL     | postgres://USER:PASSWORD@HOST:PORT/NAME |
+| SECRET_KEY | 2fi23vbiobf2...                         |
+| DEBUG      | true                                    |
 
 #### Run
 ```bash
